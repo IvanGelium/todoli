@@ -51,3 +51,230 @@
   /************************************/
   /************************************/
   /************************************/
+
+  .bg { 
+    padding: 0.5vw;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(212, 220, 235);
+    display: flex;
+    flex-direction: column;
+    gap:0.5vw;
+  }
+
+  .header {
+    padding-left: 1rem;
+    border-radius: 10px;
+    height: max(7vh,80px);
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+  }
+    .logo {
+      border-radius: 100%;
+      height: 50px;
+      width: 50px;
+      outline: 5px solid rgb(38, 60, 135);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.1s all linear;
+    }
+    .logo:hover {
+      outline: 5px solid aliceblue;
+      transition: 0.1s all linear;
+    }
+      .logo-circ-one {
+        border-radius: 100%;
+        height: 40px;
+        width: 40px;
+        outline: 5px solid aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.1s all linear;
+      }
+      .logo-circ-one:hover {
+        outline: 5px solid rgb(68, 94, 179);
+        transition: 0.1s all linear;
+      }
+
+        .logo-circ-two {
+          border-radius: 100%;
+          height: 30px;
+          width: 30px;
+          outline: 5px solid rgb(68, 94, 179);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.1s all linear;
+        }
+        .logo-circ-two:hover {
+          outline: 5px solid aliceblue;
+          transition: 0.1s all linear;
+        }
+          .logo-circ-three {
+            border-radius: 100%;
+            height: 20px;
+            width: 20px;
+            outline: 5px solid aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(98, 125, 211);
+            transition: 0.1s all linear;
+          }
+          .logo-circ-three:hover {
+            outline: 5px solid  rgb(98, 125, 211);
+            background-color:aliceblue;
+            transition: 0.1s all linear;
+          }
+          
+  .logo-text {
+    margin-left: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    letter-spacing: -0.3rem;
+    color:rgb(38, 60, 135) ;
+    transition: 0.1s all linear 0.1s;
+  }
+
+  .logo-text:hover {
+    letter-spacing: 0.5rem;
+    color:rgb(98, 125, 211);
+    transition: 0.1s all linear 0.1s;
+  }
+  
+  .midler {
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    gap:0.5vw;
+  }
+
+  .sidebar {
+    border-radius: 10px;
+    width: max(12vw,300px);
+    height: 100%;
+    background-color: aliceblue;
+    padding: 1rem;
+  }
+
+    .projects{
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 2rem;
+      color:rgb(38, 60, 135) ;
+      font-weight: bold;
+    }
+
+    .projects-container {
+      text-wrap:wrap;
+      overflow-x:visible;
+      width: 100%;
+      max-height: 75vh;
+      overflow-y: scroll;
+      /* scrollbar-width: thin;
+      scrollbar-color: rgb(38, 60, 135) aliceblue; */
+    }
+
+    *::-webkit-scrollbar {
+      width: 3px;
+    }
+    *::-webkit-scrollbar-track {
+      background: aliceblue;
+    }
+    *::-webkit-scrollbar-thumb {
+      background: rgb(38, 60, 135);
+    }
+
+      .project-content {
+        width: 100%;
+        padding-bottom: 0.2rem;
+        padding-left: 1rem;
+        border-radius: 0.5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.25rem;
+        color:rgb(38, 60, 135);
+        transition: 0.1s all linear 0.1s;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .project-content>p {
+        width: 90%;
+      }
+
+      .project-content:hover {
+        background-color: rgb(227, 239, 248);
+        transition: 0.1s all linear;
+      }
+
+      .projectButton {
+        margin-top: 1rem;
+        padding-bottom: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.25rem;
+        background-color:rgb(38, 60, 135);
+        color: aliceblue;
+        transition: 0.1s all linear 0.1s;
+        width: fit-content;
+      }
+
+      .projectButton:hover {
+        background-color:rgb(98, 125, 211);
+        transition: 0.1s all linear;
+      }
+
+
+.contentBody {
+  padding: 0px 0.5vw 0.5vw 0px;
+  width: 100%;
+  height: 90vh;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px,3fr));
+  grid-auto-rows: 450px;
+  gap: 1rem;
+
+}
+
+.contentBody::-webkit-scrollbar-track {
+  background: rgb(212, 220, 235);
+}
+
+.grid-cell {
+  border-radius: 10px;
+  background-color: aliceblue;
+  transition: 0.1s all linear;
+}
+.grid-cell:hover {
+  outline-offset: -1px;
+  outline: 1px solid rgb(38, 60, 135);
+  transition: 0.05s all linear;
+}
+
+.contentButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.contentButton>h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 600%;
+  font-weight: bolder;
+  color: rgb(38, 60, 135);
+  line-height: 2rem;
+}
+.contentButton>p {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 200%;
+  font-weight: bolder;
+  color: rgb(38, 60, 135);
+  margin-top: 3rem;
+}
