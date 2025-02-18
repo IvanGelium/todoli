@@ -231,8 +231,8 @@ textarea {
   height: 90vh;
   overflow-y: scroll;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px,3fr));
-  grid-auto-rows: 450px;
+  grid-template-columns: repeat(auto-fill, minmax(500px,3fr));
+  grid-auto-rows: 350px;
   gap: 1rem;
 
 }
@@ -245,11 +245,41 @@ textarea {
   border-radius: 10px;
   background-color: aliceblue;
   transition: 0.1s all linear;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
 }
 .grid-cell:hover {
   outline-offset: -1px;
   outline: 1px solid rgb(38, 60, 135);
   transition: 0.05s all linear;
+}
+
+
+
+.cell-title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.cell-desc {
+  resize: none;
+  overflow-x: wrap;
+  overflow-y: scroll;
+  height: 80%;
+  scrollbar-width: none;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+
+.cell-date {
+  align-self: flex-end;
+  font-family: 'Outfit Variable', sans-serif;
+  font-size: 0.75rem;
+  opacity: 50%;
 }
 
 .contentButton {
@@ -275,11 +305,6 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-
-
-
-
-
 
 .backBlur {
   display: block;
@@ -312,7 +337,7 @@ textarea {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
       .closeForm {
         border-radius: 100%;
@@ -374,3 +399,4 @@ textarea {
   border-radius: 1rem;
   outline: 1px solid rgb(38, 60, 135);
 }
+
